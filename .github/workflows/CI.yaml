@@ -19,7 +19,7 @@ jobs:
         uses: hashicorp/vault-action@v3
         with:
           url: http://13.217.198.75:8200
-          role: gh-actions-role
+          role: terraform-role
           method: jwt
           secrets: |
             aws/creds/terraform-role access_key | AWS_ACCESS_KEY_ID ;
